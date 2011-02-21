@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 
 	size = fseek(fd, 0L, SEEK_END);
 	size = ftell(fd);
-	printf("Firmware file size '%s' : %ld bytes\n", argv[1], size);
+	printf("Firmware file size : %ld bytes\n\n", size);
 	fseek(fd, 0L, SEEK_SET);
 
 	start = malloc(size);
